@@ -1,0 +1,78 @@
+/* Required for full background image */
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 100vh;
+  }
+}
+
+.font-effect-shadow-multiple {
+    font-family: 'Montserrat alternates', serrif;
+    color: #000 !important;
+    text-shadow: 1px 1px 0 #00ff00, 2px 2px 0px #fff;
+    -webkit-text-shadow: 1px 1px 0 #00ff00, 2px 3px 1px #fff;
+}
+
+.font-effect-3d {
+    font-family: 'Montserrat alternates', serrif;
+    text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+
+}
+
+.top-nav-collapse {
+  background-color: #333 !important;
+  
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #333 !important;
+  }
+}
+
+.rgba-gradient {
+ background: rgba(41, 128, 185, 1);  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, rgba(255, 255, 255, 0), rgba(109, 213, 250, 0), rgba(41, 128, 185, .4));  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, rgba(255, 255, 255, .4), rgba(109, 213, 250, .4), rgba(41, 128, 185, .4)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+
+.map-container{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.map-container iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
+}
